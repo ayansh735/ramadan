@@ -1,0 +1,394 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 99;
+}
+
+header .logo {
+  position: relative;
+  font-size: 2em;
+  font-weight: 800;
+  color: #ff5e8e;
+  text-decoration: none;
+  -webkit-animation: left-in 0.5s linear forwards;
+          animation: left-in 0.5s linear forwards;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+  opacity: 0;
+}
+
+header .nav {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .nav li {
+  list-style: none;
+}
+
+header .nav li a {
+  position: relative;
+  display: inline-block;
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #0169b2;
+  margin-right: 10px;
+  padding: 8px 18px;
+  border-radius: 30px;
+  text-decoration: none;
+  text-transform: capitalize;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+  -webkit-animation: bottom-in 0.5s linear forwards;
+          animation: bottom-in 0.5s linear forwards;
+  -webkit-animation-delay: calc(0.2s * var(--i));
+          animation-delay: calc(0.2s * var(--i));
+  opacity: 0;
+}
+
+header .nav li a:hover, header .nav li a.active {
+  background: #0169b2;
+  color: #fff;
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  padding: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow-x: hidden;
+}
+
+.banner .mosque {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  max-width: 700px;
+  -webkit-animation: fade-in 1s linear forwards;
+          animation: fade-in 1s linear forwards;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  opacity: 0;
+}
+
+.banner .content {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.banner .content .contentBx {
+  position: relative;
+  max-width: 550px;
+}
+
+.banner .content .contentBx h2 {
+  font-size: 3.5em;
+  font-weight: 700;
+  color: #0169b2;
+  line-height: 1.2em;
+  -webkit-animation: left-in 0.5s linear forwards;
+          animation: left-in 0.5s linear forwards;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+  opacity: 0;
+}
+
+.banner .content .contentBx p {
+  font-size: 1.2em;
+  color: #333;
+  -webkit-animation: right-in 0.5s linear forwards;
+          animation: right-in 0.5s linear forwards;
+  -webkit-animation-delay: 0.75s;
+          animation-delay: 0.75s;
+  opacity: 0;
+}
+
+.banner .content .contentBx a {
+  display: inline-block;
+  font-size: 1.2em;
+  color: #fff;
+  background: #ff5e8e;
+  padding: 15px 30px;
+  margin-top: 20px;
+  border-radius: 40px;
+  text-decoration: none;
+  text-transform: capitalize;
+  -webkit-animation: bottom-in 0.5s linear forwards;
+          animation: bottom-in 0.5s linear forwards;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  opacity: 0;
+}
+
+.banner .sci {
+  position: absolute;
+  bottom: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.banner .sci li {
+  list-style: none;
+}
+
+.banner .sci li a {
+  position: relative;
+  height: 50px;
+  width: 50px;
+  background: #0169b2;
+  border-radius: 50%;
+  margin-right: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-animation: right-in 0.5s linear forwards;
+          animation: right-in 0.5s linear forwards;
+  -webkit-animation-delay: calc(0.2s * var(--i));
+          animation-delay: calc(0.2s * var(--i));
+  opacity: 0;
+}
+
+.banner .sci li a img {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
+}
+
+/* Add Animation */
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes left-in {
+  0% {
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes left-in {
+  0% {
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes right-in {
+  0% {
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes right-in {
+  0% {
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes bottom-in {
+  0% {
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes bottom-in {
+  0% {
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 991px) {
+  header {
+    padding: 20px;
+  }
+  header .toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background: #0169b2 url(../images/menu.png);
+    background-position: center;
+    background-size: 30px;
+    background-repeat: no-repeat;
+    z-index: 999;
+    cursor: pointer;
+  }
+  header .toggle.active {
+    background: #0169b2 url(../images/close.png);
+    background-position: center;
+    background-size: 25px;
+    background-repeat: no-repeat;
+  }
+  header .nav {
+    display: none;
+  }
+  header .nav.active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header .nav.active li {
+    margin: 10px 0;
+  }
+  header .nav.active li a {
+    margin-left: 0;
+    font-size: 1.5em;
+  }
+  .banner {
+    padding: 150px 20px;
+  }
+  .banner .mosque {
+    max-width: 400px;
+  }
+  .banner .content .contentBx h2 {
+    font-size: 2.5em;
+  }
+}
+
+@media (max-width: 600px) {
+  @-webkit-keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0.5;
+    }
+  }
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0.5;
+    }
+  }
+  .banner .mosque {
+    opacity: 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */

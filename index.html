@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="scss/style.css" />
+    <title>Ramadan Kareem | Dont See</title>
+    <!--
+
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,
+            mollitia hic sint doloremque officia, corrupti odit ad eaque vel
+            officiis expedita. Incidunt pariatur fuga praesentium ipsum esse
+            exercitationem. Placeat, fuga?
+    -->
+  </head>
+  <body>
+    <section class="banner">
+      <img src="images/mosque.jpg" class="mosque" />
+      <header>
+        <a href="#" class="logo">Ramadan</a>
+        <div class="toggle" onclick="toggle();"></div>
+        <ul class="nav">
+          <li><a href="#" style="--i: 1" class="active">Home</a></li>
+          <li><a href="#" style="--i: 2">About</a></li>
+          <li><a href="#" style="--i: 3">Calender</a></li>
+          <li><a href="#" style="--i: 4">Time</a></li>
+          <li><a href="#" style="--i: 5">Contact</a></li>
+        </ul>
+      </header>
+      <div class="content">
+        <div class="contentBx">
+          <h2>Happy Ramadan Kareem</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,
+            mollitia hic sint doloremque officia, corrupti odit ad eaque vel
+            officiis expedita. Incidunt pariatur fuga praesentium ipsum esse
+            exercitationem. Placeat, fuga?
+          </p>
+          <a href="#">Read More</a>
+        </div>
+      </div>
+      <ul class="sci">
+        <li>
+          <a href="#" style="--i: 7"><img src="images/facebook.png" /></a>
+        </li>
+        <li>
+          <a href="#" style="--i: 8"><img src="images/twitter.png" /></a>
+        </li>
+        <li>
+          <a href="#" style="--i: 9"><img src="images/instagram.png" /></a>
+        </li>
+      </ul>
+    </section>
+    <script>
+      const toggle = () => {
+        let menu = document.querySelector(".toggle");
+        let nav = document.querySelector(".nav");
+        menu.classList.toggle("active");
+        nav.classList.toggle("active");
+      };
+    </script>
+  </body>
+</html>
